@@ -12,3 +12,21 @@ document.addEventListener('click', (e) => {
         sidebar.classList.add('-translate-x-full');
     }
 });
+const slider = document.querySelector('.slider');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+
+prevButton.addEventListener('click', () => {
+    slider.scrollBy({
+        left: -320,
+        behavior: 'smooth'
+    });
+});
+
+nextButton.addEventListener('click', () => {
+    slider.scrollBy({
+        left: 320,
+        behavior: 'smooth'
+    });
+});
+

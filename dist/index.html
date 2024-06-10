@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>ArkhamAtheletics</title>
+</head>
+
+<body class="bg-slate-900">
+
+    <!-- Sidebar -->
+    <div class="absolute z-20 bg-gray-700/45 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300"
+        id="sidebar">
+
+        <!-- Your Sidebar Content -->
+        <div class="p-4 justify-center">
+
+            <h1 class="text-2xl mb-2 font-semibold text-center border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double">Sidesdvbar</h1>
+            <div
+                class="mt-2 max-w-28 text-center border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double">
+                <button>Batman</button>
+            </div>
+            <div class="h-1 mt-2 bg-yellow-300 w-44"></div>
+            <ul class="mt-4 max-w-28 justify-center">
+                <li class="mt-2 text-center border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double"><a
+                        href="#home">BatCave</a></li>
+                <li class="mt-2  text-center border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double"><a
+                        href="#contact">GothamGains</a></li>
+                <li class="mt-2  text-center border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double"><a
+                        href="#about">WayneTech</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Navbar goes here -->
+    <nav class=" fixed top-0 z-10 w-full h-16 flex justify-between bg-black text-yellow-300 items-center">
+
+        <div class="ml-4   flex items-center ">
+            <img src="/images/logo.png" class="w-12" alt="logo">
+            <div class="ml-2 font-bold font-serif text-xl">
+                <p>Arkham Atheletics</p>
+            </div>
+        </div>
+
+        <div class=" sm:w-5/12">
+            <ul class="sm:flex justify-between max-w-96 cursor-pointer hidden">
+
+                <li class="border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double"><a
+                        href="#home">BatCave</a></li>
+                <li class="border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double"><a
+                        href="#contact">GothamGains</a></li>
+                <li class="border-2 bg-neutral-900 p-1 rounded-lg border-yellow-400 border-solid hover:border-double"><a
+                        href="#about">WayneTech</a></li>
+            </ul>
+        </div>
+        <div class="sm:block hidden mr-2 p-1 pl-3 pr-3 bg-yellow-300 text-xl font-bold rounded-lg text-black">
+            <button>Batman</button>
+        </div>
+        <div class="sm:hidden relative" id="open-sidebar">
+            <a href="#" class="text-4xl" id="drawerToggle">&#8801;</a>
+
+        </div>
+
+    </nav>
+    <!-- navbar ends here -->
+
+
+
+    <!-- Header image starts here -->
+    <header class="md:flex w-full h-auto">
+        <img class=" w-full hidden lg:block" src="/images/image1.jpg" alt="">
+        <img class="w-full hidden sm:block lg:hidden" src="/images/image3.jpg" alt="">
+        <img class="w-full sm:hidden " src="/images/image2.jpg" alt="">
+    </header>
+    <!-- Header ends here -->
+
+    <!-- Introduction Section -->
+    <section id="home" class="p-8 text-center text-yellow-300 bg-slate-800">
+        <h2 class="text-4xl font-bold">Welcome to Arkham Athletics</h2>
+        <p class="mt-4">Your ultimate destination for Batman-themed fitness and nutrition.</p>
+        <div class="mt-6 flex justify-center">
+            <a href="#features" class="bg-yellow-400 text-black px-4 py-2 rounded-lg">Explore Features</a>
+        </div>
+    </section>
+
+    <!-- Featured Workouts Section -->
+    <section id="workouts" class="p-8 bg-gray-900 text-yellow-300">
+        <h2 class="text-3xl font-bold">Featured Workouts</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Example Workout Card -->
+            <div class="bg-neutral-900 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">The Dark Knight Routine</h3>
+                <p class="mt-2">A full-body workout designed to build strength and endurance.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-yellow-400 underline">View Workout</a>
+                </div>
+            </div>
+            <!-- Repeat for other workouts -->
+        </div>
+    </section>
+
+    <!-- Nutrition Section -->
+    <section id="nutrition" class="p-8 bg-slate-800 text-yellow-300">
+        <h2 class="text-3xl font-bold">Nutrition Guides</h2>
+        <div class="mt-6">
+            <p>Discover healthy recipes and diet plans to fuel your fitness journey.</p>
+            <div class="mt-4">
+                <a href="#recipes" class="bg-yellow-400 text-black px-4 py-2 rounded-lg">Explore Recipes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculators Section -->
+    <section id="calculators" class="p-8 bg-gray-900 text-yellow-300">
+        <h2 class="text-3xl font-bold">Fitness Calculators</h2>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Example Calculator Card -->
+            <div class="bg-neutral-900 p-4 rounded-lg">
+                <h3 class="text-xl font-semibold">BMR Calculator</h3>
+                <p class="mt-2">Calculate your Basal Metabolic Rate to understand your daily calorie needs.</p>
+                <div class="mt-4">
+                    <a href="#" class="text-yellow-400 underline">Use Calculator</a>
+                </div>
+            </div>
+            <!-- Repeat for other calculators -->
+        </div>
+    </section>
+
+    <!-- Progress Tracker Section -->
+    <section id="progress" class="p-8 bg-slate-800 text-yellow-300">
+        <h2 class="text-3xl font-bold">Track Your Progress</h2>
+        <div class="mt-6">
+            <p>Log your workouts, track your weight, and visualize your progress.</p>
+            <div class="mt-4">
+                <a href="#tracker" class="bg-yellow-400 text-black px-4 py-2 rounded-lg">Start Tracking</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="p-8 bg-gray-900 text-yellow-300">
+        <h2 class="text-3xl font-bold">Join Our Community</h2>
+        <div class="mt-6">
+            <p>Connect with other fitness enthusiasts, share tips, and participate in challenges.</p>
+            <div class="mt-4">
+                <a href="#forum" class="bg-yellow-400 text-black px-4 py-2 rounded-lg">Join the Forum</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="p-8 bg-black text-yellow-300">
+        <div class="flex justify-between">
+            <div>
+                <h3 class="text-xl font-bold">Quick Links</h3>
+                <ul class="mt-2">
+                    <li><a href="#home" class="underline">Home</a></li>
+                    <li><a href="#workouts" class="underline">Workouts</a></li>
+                    <li><a href="#nutrition" class="underline">Nutrition</a></li>
+                    <li><a href="#calculators" class="underline">Calculators</a></li>
+                    <li><a href="#community" class="underline">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Contact</h3>
+                <p class="mt-2">Email: contact@arkhamathletics.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="mt-6 text-center">
+            <p>&copy; 2024 Arkham Athletics. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
